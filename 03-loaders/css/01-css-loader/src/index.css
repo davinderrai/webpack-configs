@@ -1,0 +1,11 @@
+body {
+  background: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
