@@ -4,14 +4,14 @@ When the `entry` config option is an object, multiple bundles will be made. The 
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: {
-    one: 'one.js',
-    two: 'two.js'
+    one: './one.js',
+    two: ['./extra.js', './two.js']
   },
   output: {
-    path: __dirname + '/build',
+    path: path.join(__dirname, 'build'),
     filename: '[name].js'
   }
-}
+};
 ```

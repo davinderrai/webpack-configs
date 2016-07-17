@@ -8,10 +8,10 @@ Note: This only works for **free** variables. If you define the variable within 
 const webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   },
   plugins: [
@@ -21,5 +21,4 @@ module.exports = {
     })
   ]
 };
-
 ```

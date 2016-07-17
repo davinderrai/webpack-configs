@@ -52,7 +52,7 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	console.log('I am two');
+	console.log('I am executed before the index');
 
 
 /***/ },

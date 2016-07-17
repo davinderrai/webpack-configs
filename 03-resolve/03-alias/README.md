@@ -4,10 +4,10 @@
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   },
   resolve: {

@@ -4,11 +4,11 @@ When Webpack only has one chunk to output, you don't have to worry about naming 
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   }
-}
+};
 ```

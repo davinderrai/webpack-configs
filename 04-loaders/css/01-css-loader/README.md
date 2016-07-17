@@ -6,3 +6,17 @@ The `css-loader` is used to transform CSS into JavaScript. The way that this wor
 2. That function is imported and immediately invoked to get the array. This array will be exported.
 3. The CSS is converted to a string.
 4. An array of the CSS's module id and the CSS string is added to the array.
+
+```javascript
+module.exports = {
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: 'css-loader'
+      }
+    ]
+  }
+}
+
+```

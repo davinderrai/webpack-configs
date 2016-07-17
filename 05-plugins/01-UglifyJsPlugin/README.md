@@ -6,10 +6,10 @@ The `UglifyJsPlugin`'s main function is to minimize your code. This is useful fo
 const webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   },
   plugins: [

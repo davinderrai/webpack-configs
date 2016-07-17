@@ -1,10 +1,13 @@
+const path = require('path');
+
 module.exports = {
+  context: path.join(__dirname, 'src'),
   entry: {
-    one: __dirname + '/src/one.js',
-    two: [__dirname + '/src/extra.js', __dirname + '/src/two.js']
+    one: './one.js',
+    two: ['./extra.js', './two.js']
   },
   output: {
-    path: __dirname + '/build',
+    path: path.join(__dirname, 'build'),
     filename: '[name].js'
   }
-}
+};

@@ -4,12 +4,6 @@ The `sass-loader` provides a pre-compile from `Sass` or `SCSS` to CSS, so it sho
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
-  entry: './index.sass',
-  output: {
-    path: __dirname + '/build/',
-    filename: 'index.js'
-  },
   module: {
     loaders: [
       {

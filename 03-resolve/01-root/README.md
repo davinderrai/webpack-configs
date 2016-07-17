@@ -4,14 +4,14 @@
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
-  entry: 'index.js',
+  context: path.join(__dirname, 'src'),
+  entry: 'index',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   },
   resolve: {
-    root: __dirname + '/src/'
+    root: path.join(__dirname, 'src')
   }
 };
 ```

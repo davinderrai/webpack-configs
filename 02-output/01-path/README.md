@@ -4,11 +4,11 @@ Use the `output.path` config option to specify which directory the files output 
 
 ```javascript
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: './index.js',
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: 'app.js'
   }
-}
+};
 ```

@@ -1,14 +1,15 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
-  context: __dirname + '/src/',
+  context: path.join(__dirname, 'src'),
   entry: {
     first: './one.js',
     second: './two.js',
     third: './three.js'
   },
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, 'build'),
     filename: '[name].js'
   },
   plugins: [
