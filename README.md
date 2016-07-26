@@ -6,6 +6,31 @@ https://webpack.github.io/docs/
 
 http://survivejs.com/webpack/introduction/
 
+###Running:
+
+In order to run Webpack for the configurations, you will either need to:
+
+1. Run the code from the root directory, requiring you to specify the (long) path to the config.
+  
+  ```
+  webpack --config=01-entry/01-string-entry/webpack.config.js
+  ```
+
+2. Install Webpack globally so that you can call Webpack from each config example directory.
+
+  ```
+  npm install -g webpack
+  cd 01-entry/01-string-entry
+  webpack
+  ```
+
+3. Use the relative path to the Webpack script from the config example directory.
+
+  ```
+  cd 01-entry/01-string-entry
+  node "../../node_modules/webpack/bin/webpack.js"
+  ```
+
 ###Tips:
 
 1. Always use the `path` module to describe paths. This can help prevent issues with resolving files.
