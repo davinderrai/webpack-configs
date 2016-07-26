@@ -6,7 +6,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'lib.js',
-    library: 'myLib',
-    libraryTarget: 'umd'
+    library: 'myLib'
   }
 };
