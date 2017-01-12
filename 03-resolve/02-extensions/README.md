@@ -1,6 +1,6 @@
 #resolve.extensions
 
-[`resolve.extensions`](http://webpack.github.io/docs/configuration.html#resolve-extensions) takes an array of file extensions to attempt to test for when a `require` or `import` statement does not include a file extension.
+[`resolve.extensions`](https://webpack.js.org/configuration/resolve/#resolve-extensions) takes an array of file extensions to attempt to test for when a `require` or `import` statement does not include a file extension.
 
 ```javascript
 module.exports = {
@@ -15,3 +15,5 @@ module.exports = {
   }
 };
 ```
+
+**Note:** Webpack 2 removed the need to include an empty string in the `extensions` array.

@@ -8,6 +8,6 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
-    extensions: ['', '.js', '.es6']
+    extensions: ['.js', '.es6']
   }
 };
