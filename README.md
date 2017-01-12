@@ -48,7 +48,7 @@ In order to run Webpack for the configurations, you will either need to:
   }
   ```
 
-2. If Webpack cannot find a module, you probably need to use a relative path. Setting a root directory using `resolve.root` can help with this issue as well.
+2. If Webpack cannot find a module, you probably need to use a relative path. Setting a root directory using `resolve.modules` can help with this issue as well.
 
   ```javascript
   // yea
@@ -62,7 +62,7 @@ In order to run Webpack for the configurations, you will either need to:
     context: path.join(__dirname, 'src'),
     entry: 'index.js',
     resolve: {
-      root: path.join(__dirname, 'src')
+      root: [path.join(__dirname, 'src'), 'node_modules']
     }
   };
 
