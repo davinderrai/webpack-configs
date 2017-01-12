@@ -5,10 +5,10 @@
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel'
+        loader: 'babel-loader'
       }
     ]
   }
@@ -27,16 +27,16 @@ Your project should include configuration code to specify how Babel should be ru
 }
 ```
 
-You will often want to have an `excludes: '/node_modules/'` or an `includes` value in your loader object so that the `babel-loader` doesn't try to compile all of the third party JavaSript code in your application.
+You will often want to have an `exclude: '/node_modules/'` or an `include` value in your loader object so that the `babel-loader` doesn't try to compile all of the third party JavaSript code in your application.
 
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
-        excludes: '/node_modules/'
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
       }
     ]
   }

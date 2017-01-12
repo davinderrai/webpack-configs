@@ -13,10 +13,10 @@ You can see a list of all of the transformations that the `babel-preset-es2015` 
 //webpack.config.js
 {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: '/node_modules/'
       }
     ]

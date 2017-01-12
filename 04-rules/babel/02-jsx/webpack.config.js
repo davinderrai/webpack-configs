@@ -8,7 +8,7 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   // include react and react-dom in the externals so that the
   // output app.js isn't gigantic
@@ -17,11 +17,11 @@ module.exports = {
     'react-dom': 'ReactDOM'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel',
-        excludes: '/node_modules/'
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
       }
     ]
   }

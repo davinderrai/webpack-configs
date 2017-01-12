@@ -8,11 +8,11 @@ module.exports = {
     filename: 'app.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
-        excludes: '/node_modules/'
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
       }
     ]
   }
