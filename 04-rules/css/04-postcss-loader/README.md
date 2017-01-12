@@ -7,15 +7,33 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css', 'postcss']
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function() {
+                return [autoprefixer]
+              }
+            }
+          }
+        ]
       }
     ]
-  },
-  postcss: function() {
-    return [autoprefixer];
   }
 };
+```
+
+The `postcss-loader` expects a `postcss.config.js` file that exports a configuration object for `postcss` to use.
+
+```js
+module.exports = {
+  plugins: [
+    require('autoprefixer')
+  ]
+}
 ```

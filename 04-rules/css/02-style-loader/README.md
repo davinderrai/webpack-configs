@@ -12,10 +12,13 @@
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   }

@@ -9,14 +9,15 @@ module.exports = {
     filename: 'index.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css', 'postcss']
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader'
+        ]
       }
     ]
-  },
-  postcss: function() {
-    return [autoprefixer];
   }
 };

@@ -5,10 +5,14 @@ The `sass-loader` provides a pre-compile from `Sass` or `SCSS` to CSS, so it sho
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.sass$/,
-        loaders: ['style', 'css', 'sass']
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       }
     ]
   }

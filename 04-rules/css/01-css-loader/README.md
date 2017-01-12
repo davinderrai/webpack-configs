@@ -10,7 +10,7 @@ The `css-loader` is used to transform CSS into JavaScript. The way that this wor
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         loader: 'css-loader'

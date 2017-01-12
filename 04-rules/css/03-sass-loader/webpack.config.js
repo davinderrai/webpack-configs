@@ -8,10 +8,14 @@ module.exports = {
     filename: 'index.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.sass$/,
-        loaders: ['style', 'css', 'sass']
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       }
     ]
   }

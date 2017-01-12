@@ -8,10 +8,13 @@ module.exports = {
     filename: 'app.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   }
