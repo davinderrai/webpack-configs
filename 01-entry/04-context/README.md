@@ -6,7 +6,7 @@ The `context` option allows the user to specify the absolute path of the directo
 // without context
 module.exports = {
   entry: {
-    one: path.join(__dirname, 'src', 'one.js',
+    one: path.join(__dirname, 'src', 'one.js'),
     two: [
       path.join(__dirname, 'src', 'extra.js'),
       path.join(__dirname, 'src', 'two.js')

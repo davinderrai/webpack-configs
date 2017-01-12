@@ -1,6 +1,6 @@
 #DefinePlugin
 
-The `DefinePlugin` is used to replace variables in your source code with values that you define in the plugin. For example, if you use a `DEBUG` variable in your code to allow debugging, you can set `{DEBUG: false}` in the `DefinePlugin` and all instances of `DEBUG` in your code will be replaced by `false`. This is useful for production builds when used alongside the `UglifyJsPlugin` because this can create dead code which is then removed in the minimization process.
+The `DefinePlugin` is used to replace variables in your source code with values that you define in the plugin. For example, if you use a `DEBUG` variable in your code to allow debugging, you can set `{DEBUG: true}` in your development configuration and `{DEBUG: false}` in your production configuration for the `DefinePlugin` and all instances of `DEBUG` in your code will be replaced with the value you provide. Used alongside the `UglifyJsPlugin`, the `DefinePlugin` can create dead code which the `UglifyJsPlugin` will remove.
 
 Note: This only works for **free** variables. If you define the variable within a module, it will not be re-assigned your provided value.
 

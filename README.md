@@ -36,7 +36,7 @@ In order to run Webpack for the configurations, you will either need to:
 1. Always use the `path` module to describe paths. This can help prevent issues with resolving files.
 
   ```javascript
-  // yay
+  // yea
   const path = require('path');
   module.exports = {
     context: path.join(__dirname, 'src')
@@ -51,7 +51,7 @@ In order to run Webpack for the configurations, you will either need to:
 2. If Webpack cannot find a module, you probably need to use a relative path. Setting a root directory using `resolve.root` can help with this issue as well.
 
   ```javascript
-  // yay
+  // yea
   module.exports = {
     context: path.join(__dirname, 'src'),
     entry: './index.js'
