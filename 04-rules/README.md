@@ -1,6 +1,6 @@
 #rules
 
-[`rule`s](https://webpack.js.org/configuration/module/#rule) are used to configure how the files in a project are compiled into JavaScript modules. They are included in the [`rules`](https://webpack.js.org/configuration/module/#module-rules) array of the `modules` option in a Webpack configuration.
+[Rules](https://webpack.js.org/configuration/module/#rule) are used to configure how the files in a project are compiled into JavaScript modules. They are included in the [`rules`](https://webpack.js.org/configuration/module/#module-rules) array of the `modules` option in a Webpack configuration.
 
 ```js
 {

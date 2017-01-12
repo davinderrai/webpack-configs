@@ -62,7 +62,7 @@ In order to run Webpack for the configurations, you will either need to:
     context: path.join(__dirname, 'src'),
     entry: 'index.js',
     resolve: {
-      root: [path.join(__dirname, 'src'), 'node_modules']
+      modules: [path.join(__dirname, 'src'), 'node_modules']
     }
   };
 

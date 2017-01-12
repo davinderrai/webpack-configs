@@ -1,6 +1,6 @@
 #UglifyJsPlugin
 
-The `UglifyJsPlugin`'s main function is to minimize your code. This is useful for production builds of your app. The plugin can also (and does by default) output a source map to make finding bugs easier.
+The `UglifyJsPlugin`'s main function is to minimize your code. This is useful for production builds of your app. The plugin can also (and does by default) output a source map to make finding bugs easier when inspecting code in a browser's developer tools.
 
 ```javascript
 const webpack = require('webpack');
