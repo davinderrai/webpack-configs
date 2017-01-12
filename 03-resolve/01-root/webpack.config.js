@@ -8,6 +8,6 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
-    root: path.join(__dirname, 'src')
+    modules: [path.join(__dirname, 'src')]
   }
 };

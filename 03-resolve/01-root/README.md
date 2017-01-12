@@ -1,6 +1,6 @@
-#resolve.root
+#resolve.modules
 
-[`resolve.root`](http://webpack.github.io/docs/configuration.html#resolve-root) allows you to provide the root directory (or an array of root directories) to search for your modules. Doing this allows you to write `require`/`import` paths without path relative information (no more `../`s, just include the path starting in the `root` directory).
+[`resolve.modules`](https://webpack.js.org/configuration/resolve/#resolve-modules) allows you to specify an array of directories to search for your modules. Doing this allows you to write `require`/`import` paths without path relative information (no more `../`s, just include the path starting in the `modules` directory). The default directory for this option is `node_modules`. If you add your own directories, you should make sure to still include `node_modules` in the `modules` array.
 
 ```javascript
 module.exports = {
@@ -11,7 +11,9 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
-    root: path.join(__dirname, 'src')
+    modules: [path.join(__dirname, 'src'), 'node_modules']
   }
 };
 ```
+
+**Note:** Webpack 2 merged the `root`, `fallback`, and `modulesDirectories` options from Webpack 1 into the single `modules` option.
