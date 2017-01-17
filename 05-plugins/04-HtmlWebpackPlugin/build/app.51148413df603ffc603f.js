@@ -1,4 +1,3 @@
-var lib_924150f7d33e087b8fcb =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -64,32 +63,15 @@ var lib_924150f7d33e087b8fcb =
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = function() {
-  return 'I come from lib1';
-}
+console.log('I am the application!');
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = function() {
-  return 'I come from lib2';
-}
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__;
 
 /***/ })
 /******/ ]);

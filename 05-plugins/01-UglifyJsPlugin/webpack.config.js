@@ -9,6 +9,8 @@ module.exports = {
     filename: 'app.js'
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true
+    })
   ]
 };

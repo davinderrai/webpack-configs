@@ -1,6 +1,6 @@
 #UglifyJsPlugin
 
-The `UglifyJsPlugin`'s main function is to minimize your code. This is useful for production builds of your app. The plugin can also (and does by default) output a source map to make finding bugs easier when inspecting code in a browser's developer tools.
+`UglifyJsPlugin` is used to minimize JavaScript. It will also remove any dead code from your JavaScript (code that can never be run). You can also configure the plugin to generate a source map, which can make debugging your application easier.
 
 ```javascript
 const webpack = require('webpack');
@@ -17,3 +17,14 @@ module.exports = {
   ]
 };
 ```
+
+By default, the plugin will **not** generate a source map. To activate this option, pass the `sourceMap: true` option to the plugin.
+
+```javascript
+plugins: [
+  new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true
+  })
+]
+```
+

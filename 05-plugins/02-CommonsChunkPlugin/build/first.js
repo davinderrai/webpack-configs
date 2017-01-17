@@ -1,11 +1,12 @@
-webpackJsonp([0],[
-/* 0 */
-/***/ function(module, exports, __webpack_require__) {
+webpackJsonp([2],[
+/* 0 */,
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	const commonFunc = __webpack_require__(1);
-	console.log('I am the first page');
-	commonFunc();
+const commonFunc = __webpack_require__(0);
+console.log('I am the first page');
+commonFunc();
 
 
-/***/ }
-]);
+/***/ })
+],[1]);

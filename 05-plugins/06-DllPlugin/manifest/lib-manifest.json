@@ -1,7 +1,13 @@
 {
-  "name": "lib_20cc0780a72a8da3116c",
+  "name": "lib_924150f7d33e087b8fcb",
   "content": {
-    "./src/lib1.js": 1,
-    "./src/lib2.js": 2
+    "./src/lib1.js": {
+      "id": 0,
+      "meta": {}
+    },
+    "./src/lib2.js": {
+      "id": 1,
+      "meta": {}
+    }
   }
 }
