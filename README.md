@@ -1,12 +1,14 @@
 Various examples of using webpack.
 
-###Resources:
+**Note:** With Webpack v2, the docs are _much_ better. I like this as a quick reference, but the official docs cover things in much more detail.
 
-https://webpack.github.io/docs/
+### Resources:
+
+https://webpack.js.org
 
 http://survivejs.com/webpack/introduction/
 
-###Running:
+### Running:
 
 In order to run Webpack for the configurations, you will either need to:
 
@@ -31,7 +33,7 @@ In order to run Webpack for the configurations, you will either need to:
   node "../../node_modules/webpack/bin/webpack.js"
   ```
 
-###Tips:
+### Tips:
 
 1. Always use the `path` module to describe paths. This can help prevent issues with resolving files.
 
